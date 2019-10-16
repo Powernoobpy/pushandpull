@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
+<!-- 20. -->
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -22,16 +19,18 @@
     <script>
         var count = 0;
         function hideName() {
-            document.getElementById('destName').style.display = "none";
+            // 9.
         }
         function showName() {
-            document.getElementById('destName').style.display = "block";
+            // 10.
         }
         function changeImage() {
-            document.getElementById('birdImage').src = "../img/user/profile.jpg";
+            // 11.
+            document.getElementById('birdImage').src = "";
         }
         function changeImageBack() {
-            document.getElementById('birdImage').src = "../img/hide.jpg";
+            // 12.
+            document.getElementById('birdImage').src = "";
         }
         function changeBackground() {
             document.getElementById('firstRow').className = "row bg-warning";
@@ -44,7 +43,7 @@
                 document.getElementById('inputField').value = "Hi Little Bird We love you!"
                 count = 1;
             } else {
-                document.getElementById('inputField').value = "";
+                // 13.
                 count = 0;
             }
         }
@@ -52,36 +51,46 @@
 </head>
 
 <body style="background-color: #d9e9cc">
-    <div class="row">
-        <div class="col-4">
+    <!-- 19. -->
+    <div class="">
+        <!-- 18. -->
+        <div class="">
 
         </div>
-        <div class="col">
-            <img onmouseover=changeImage() onmouseout=changeImageBack() src="../img/hide.jpg" alt="birb" id="birdImage"
+        <!-- 17. -->
+        <div class="">
+            <!-- 6. -->
+            <img onmouseover=changeImage() onmouseout=changeImageBack() src="" alt="birb" id="birdImage" 
                 width="auto" height="250px">
         </div>
     </div>
     <div class="row" id="firstRow">
-        <div class="col-4">
-
+        <!-- 14. -->
+        <div>
             <div class="input-group">
                 <input id="inputField" type="text" class="form-control" placeholder="Click button to see magic"
                     aria-label="Click button to see magic" aria-describedby="basic-addon2" disabled>
                 <div class="input-group-append">
-                    <button onClick=changeInputField() class="btn btn-outline-secondary" type="button">Magic</button>
+                    <!-- 7. -->
+                    <button class="btn btn-outline-secondary" type="button">Magic</button>
                 </div>
             </div>
         </div>
-        <div class="col-4 text-danger">
-            <button class="btn btn-primary" onClick=showName()>Show</button>
-            <button class="btn btn-danger" onClick=hideName()>Hide</button>
-            <h2 id='destName'>Hi Little Birb</h2>
+        <!-- 15. -->
+        <div>
+            <!-- 3. -->
+            <button class="" onClick="">Show</button>
+            <!-- 4. -->
+            <button class="" onClick="">Hide</button>
+            <!-- 5. -->
+            <h2 id=''>Hi Little Birb</h2>
         </div>
-        <div class="col-4">
-            <button class="btn btn-warning" onClick=changeBackground()>Change Row Color</button>
-            <button class="btn btn-success" onClick=changeBackgroundBack()>Back</button>
+        <!-- 16. -->
+        <div>
+            <!-- 1. -->
+            <button class="" onClick="">Change Row Color</button>
+            <!-- 2. -->
+            <button class="" onClick="">Back</button>
         </div>
     </div>
 </body>
-
-</html>
