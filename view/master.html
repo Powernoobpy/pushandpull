@@ -31,7 +31,7 @@
             document.getElementById('birdImage').src = "../img/user/profile.jpg";
         }
         function changeImageBack() {
-            document.getElementById('birdImage').src = "../img/logo.png";
+            document.getElementById('birdImage').src = "../img/hide.jpg";
         }
         function changeBackground() {
             document.getElementById('firstRow').className = "row bg-warning";
@@ -51,13 +51,13 @@
     </script>
 </head>
 
-<body>
+<body style="background-color: #d9e9cc">
     <div class="row">
         <div class="col-4">
 
         </div>
         <div class="col">
-            <img onmouseover=changeImage() onmouseout=changeImageBack() src="../img/logo.png" alt="birb" id="birdImage"
+            <img onmouseover=changeImage() onmouseout=changeImageBack() src="../img/hide.jpg" alt="birb" id="birdImage"
                 width="auto" height="250px">
         </div>
     </div>
